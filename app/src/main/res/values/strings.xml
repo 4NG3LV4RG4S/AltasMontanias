@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Altas Montañas</string>
+    <string name="google_maps_key">AIzaSyCNGDDCBXfXGJV0zWe3LcZN9lTPbX9bCc4</string>
+    <string name="Ixhua">Ixhuatlan del Café</string>
+    <string name="default_notification_channel_id" translatable="false">default_channel_id</string>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Ixhua">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/Titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/corodoba"/>
+
+        <TableLayout
+            android:id="@+id/TablaBTN"
+            android:layout_below="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/Sitios"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/sitios"
+                    android:elevation="4dp" />
+
+                <ImageView
+                    android:id="@+id/Actividades"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/actividades"
+                    android:elevation="4dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/Tradiciones"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/tradiciones2"
+                    android:elevation="4dp" />
+
+                <ImageView
+                    android:id="@+id/Ruta"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ruta2"
+                    android:elevation="4dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/Hoteles"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/hotel2"
+                    android:elevation="4dp" />
+
+                <ImageView
+                    android:id="@+id/Conciencia"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/conciencia"
+                    android:elevation="4dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/Historia"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/historia"
+                    android:elevation="4dp" />
+
+                <ImageView
+                    android:id="@+id/Artesania"
+                    android:layout_width="4dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/artesanos"
+                    android:elevation="4dp" />
+
+            </TableRow>
+
+            <HorizontalScrollView
+                android:layout_below="@+id/Marquee"
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/marqueeCordoba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/bBack"
+                android:layout_below="@+id/TablaBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/botonack"/>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

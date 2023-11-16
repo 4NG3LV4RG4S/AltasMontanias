@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SitiosCosco">
+
+    <fragment
+        android:id="@+id/mapSitiosCosco"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"
+        tools:ignore="FragmentTagUsage"
+        tools:context=".SitiosIxhua" />
+
+    <ImageView
+        android:id="@+id/limites"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="118dp"
+        map:srcCompat="@drawable/delimitar" />
+
+    <ImageView
+        android:id="@+id/restaurants"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="165dp"
+        map:srcCompat="@drawable/restaurants" />
+
+    <ImageView
+        android:id="@+id/hotel"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="213dp"
+        map:srcCompat="@drawable/hotel" />
+
+    <ImageView
+        android:id="@+id/montana"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="260dp"
+        map:srcCompat="@drawable/montana" />
+
+</RelativeLayout>

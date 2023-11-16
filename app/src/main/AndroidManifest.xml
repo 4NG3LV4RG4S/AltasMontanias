@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo3_foreground"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AltasMontañas"
+        tools:targetApi="31">
+        <activity
+            android:name=".huaho"
+            android:exported="false" />
+        <activity
+            android:name=".HoHua"
+            android:exported="false" />
+        <activity
+            android:name=".Hotelhua"
+            android:exported="false" />
+        <activity
+            android:name=".tradiciones_ixhua"
+            android:exported="false" />
+        <activity
+            android:name=".actividadesCosco"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SitiosCosco"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadesIxhua"
+            android:exported="false" />
+        <activity
+            android:name=".SitiosIxhua"
+            android:exported="false" />
+        <activity
+            android:name=".Municipios"
+            android:exported="false" />
+        <activity
+            android:name=".PMacho"
+            android:exported="false" />
+        <activity
+            android:name=".Alpa"
+            android:exported="false" />
+        <activity
+            android:name=".Calca"
+            android:exported="false" />
+        <activity
+            android:name=".Fortin"
+            android:exported="false" />
+        <activity
+            android:name=".Cordoba"
+            android:exported="false" />
+        <activity
+            android:name=".Orizaba"
+            android:exported="false" />
+        <activity
+            android:name=".Ixhua"
+            android:exported="false" />
+        <activity
+            android:name=".Cosco"
+            android:exported="false" />
+        <activity
+            android:name=".Huatusco"
+            android:exported="false" />
+        <activity
+            android:name=".Zentla"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Intro"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
